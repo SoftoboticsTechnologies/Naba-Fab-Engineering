@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #eef1f4; color: #16202b; font-family: "IBM Plex Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0b4a8f; text-decoration: none; }
+  a:hover { color: #1769c4; }
+  html { scroll-behavior: smooth; }
+</style>
+</helmet>
+
+<div style="display:flex; flexDirection:column; minHeight:100vh; background:#eef1f4">
+
+  <header style="position:sticky; top:0; zIndex:50; background:rgba(238,241,244,0.93); backdropFilter:blur(12px); borderBottom:1px solid #dde3e9; padding:12px clamp(12px,3vw,28px); display:flex; alignItems:center; gap:16px; flexWrap:wrap">
+    <a href="#top" style="display:flex; alignItems:center; gap:14px; flexShrink:0">
+      <img src="uploads/logo.png" alt="Naba Fab Engineering" style="height:44px; width:auto; display:block; borderRadius:10px" />
+      <div style="display:flex; flexDirection:column; lineHeight:1.15">
+        <span style="fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:15px; color:#0b2440; letterSpacing:-0.2px">Naba Fab</span>
+        <span style="fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:15px; color:#0b4a8f; letterSpacing:-0.2px">Engineering</span>
+      </div>
+    </a>
+
+    <nav style="marginLeft:auto; display:flex; alignItems:center; gap:4px; flexWrap:wrap">
+      <a href="#top" style="padding:10px 14px; borderRadius:999px; fontSize:15px; fontWeight:500; color:#33414f" style-hover="background:#e2e8ee">Home</a>
+      <a href="#about" style="padding:10px 14px; borderRadius:999px; fontSize:15px; fontWeight:500; color:#33414f" style-hover="background:#e2e8ee">About</a>
+      <a href="#specialist" style="padding:10px 14px; borderRadius:999px; fontSize:15px; fontWeight:500; color:#33414f" style-hover="background:#e2e8ee">Specialist In</a>
+      <a href="#services" style="padding:10px 14px; borderRadius:999px; fontSize:15px; fontWeight:500; color:#33414f" style-hover="background:#e2e8ee">Services</a>
+      <a href="#clients" style="padding:10px 14px; borderRadius:999px; fontSize:15px; fontWeight:500; color:#33414f" style-hover="background:#e2e8ee">Clients</a>
+      <a href="#why" style="padding:10px 14px; borderRadius:999px; fontSize:15px; fontWeight:500; color:#33414f" style-hover="background:#e2e8ee">Why us</a>
+      <a href="#contact" style="padding:10px 14px; borderRadius:999px; fontSize:15px; fontWeight:500; color:#33414f" style-hover="background:#e2e8ee">Contact</a>
+    </nav>
+
+    <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" style="borderRadius:999px; background:#0b4a8f; color:#ffffff; padding:12px 22px; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:15px; whiteSpace:nowrap" style-hover="background:#093a70">WhatsApp 9051099777</a>
+  </header>
+
+  <main style="flex:1; minWidth:0; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
+
+    <section id="top" style="borderRadius:28px; background:#0b2440; backgroundImage:linear-gradient(120deg,#0b2440 0%,#0b3f78 65%,#0e559f 100%); color:#ffffff; padding:clamp(28px,4.5vw,64px) clamp(24px,4vw,56px); display:grid; gridTemplateColumns:repeat(auto-fit,minmax(320px,1fr)); gap:48px; alignItems:center">
+      <div>
+        <div style="display:inline-block; borderRadius:999px; border:1px solid rgba(255,255,255,0.35); padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.8px; color:#c8dcf3; marginBottom:24px">INDUSTRIAL ENGINEERING &amp; LABOUR SERVICES</div>
+        <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(32px,5vw,56px); lineHeight:1.06; fontWeight:800; letterSpacing:-1.5px; margin:0 0 20px">Twenty-plus years keeping plants running in West Bengal.</h1>
+        <p style="fontSize:18px; lineHeight:1.65; color:#cfe0f2; maxWidth:560px; margin:0 0 32px; textWrap:pretty">Established in 2002, Naba Fab Engineering supplies skilled labour, machine operators and technical crews to refineries, solvent extraction plants, oil mills and chemical works — from fabrication and erection to boiler, insulation and packaging operations.</p>
+        <div style="display:flex; gap:12px; flexWrap:wrap">
+          <a href="#contact" style="borderRadius:999px; padding:16px 30px; background:#ffffff; color:#0b2440; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px" style-hover="background:#e7eff8">Get a quote</a>
+          <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" style="borderRadius:999px; padding:16px 30px; border:1.5px solid rgba(255,255,255,0.5); color:#ffffff; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px" style-hover="background:rgba(255,255,255,0.12)">WhatsApp us</a>
+        </div>
+      </div>
+      <div style="borderRadius:22px; height:360px; border:1px solid rgba(255,255,255,0.25); backgroundColor:rgba(255,255,255,0.06); backgroundImage:repeating-linear-gradient(135deg,rgba(255,255,255,0.10) 0 10px,rgba(255,255,255,0) 10px 20px); display:grid; placeItems:center">
+        <span style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:1.6px; color:#bcd6ef; textAlign:center; padding:0 24px">SITE PHOTO — TANK ERECTION<br />OR PLANT STRUCTURE</span>
+      </div>
+    </section>
+
+    <section style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:20px">
+      <div style="borderRadius:22px; background:#ffffff; padding:32px 30px">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:40px; fontWeight:800; color:#0b4a8f; letterSpacing:-1px">2002</div>
+        <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.6px; color:#6b7a89; marginTop:8px">ESTABLISHED</div>
+      </div>
+      <div style="borderRadius:22px; background:#ffffff; padding:32px 30px">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:40px; fontWeight:800; color:#0b4a8f; letterSpacing:-1px">16</div>
+        <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.6px; color:#6b7a89; marginTop:8px">INDUSTRIAL CLIENTS</div>
+      </div>
+      <div style="borderRadius:22px; background:#ffffff; padding:32px 30px">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:40px; fontWeight:800; color:#0b4a8f; letterSpacing:-1px">13</div>
+        <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.6px; color:#6b7a89; marginTop:8px">SPECIALIST TRADES</div>
+      </div>
+    </section>
+
+    <section id="about" style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px); display:grid; gridTemplateColumns:repeat(auto-fit,minmax(300px,1fr)); gap:56px">
+      <div>
+        <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">01 — ABOUT US</div>
+        <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0; color:#0b2440">A contractor the plants in Hooghly call back.</h2>
+      </div>
+      <div style="display:flex; flexDirection:column; gap:20px; fontSize:17px; lineHeight:1.7; color:#3b4956">
+        <p style="margin:0; textWrap:pretty">Naba Fab Engineering was established in 2002 at Kapasdanga, Hooghly, and has grown into a trusted industrial services provider across West Bengal. We started with fabrication and maintenance crews for local oil mills and refineries, and today deploy skilled and unskilled labour, machine operators and technical manpower across solvent extraction, hydrogenation, refinery and packaging operations.</p>
+        <p style="margin:0; textWrap:pretty">Work is carried out under direct supervision with a safety-first discipline, whether it is a shutdown job on a tank vessel, chimney and structure work at height, or a running-shift operator requirement. We are a registered business with GST and PAN on record, and we invoice and document accordingly.</p>
+        <div style="display:flex; gap:12px; flexWrap:wrap; marginTop:4px">
+          <div style="borderRadius:999px; background:#eef4fb; padding:12px 22px; fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:1px; color:#0b4a8f">GST 19AGUPD7584J1ZJ</div>
+          <div style="borderRadius:999px; background:#eef4fb; padding:12px 22px; fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:1px; color:#0b4a8f">PAN AGUPD7584J</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="specialist" style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="display:flex; alignItems:flex-end; justifyContent:space-between; gap:32px; flexWrap:wrap; marginBottom:36px">
+        <div>
+          <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">02 — SPECIALIST IN</div>
+          <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0; color:#0b2440">Core technical capabilities</h2>
+        </div>
+        <p style="margin:0; maxWidth:360px; fontSize:16px; lineHeight:1.6; color:#5b6975">Process plant work is where we are strongest. Each of these is a job we staff, supervise and complete regularly.</p>
+      </div>
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:14px">
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">01</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Solvent extraction</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">02</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Refinery</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">03</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Hydrogenation</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">04</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Chimney and structure work</div>
+        </div>
+        <div style="borderRadius:18px; background:#0b4a8f; padding:24px 26px; display:flex; alignItems:center; gap:16px; gridColumn:span 2">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:rgba(255,255,255,0.2); color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">05</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#ffffff; lineHeight:1.3">Tank vessel fabrication and erection maintenance job</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">06</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Boiler</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">07</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Wax press</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">08</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Filter press</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">09</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Pouch machine operating</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">10</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Industrial automation</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">11</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Any packaging operation</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">12</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Hot and cold insulation</div>
+        </div>
+        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px; display:flex; alignItems:center; gap:16px">
+          <div style="width:34px; height:34px; flexShrink:0; borderRadius:999px; background:#0b4a8f; color:#fff; display:grid; placeItems:center; fontFamily:'IBM Plex Mono',monospace; fontSize:12px">13</div>
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:18px; color:#0b2440; lineHeight:1.3">Fibre glass coating</div>
+        </div>
+        <div style="borderRadius:18px; background:#eef4fb; padding:24px 26px; display:flex; alignItems:center; justifyContent:space-between; gap:16px; gridColumn:span 2">
+          <div style="fontSize:16px; color:#33414f">Need a trade not listed here?</div>
+          <a href="#contact" style="borderRadius:999px; background:#0b4a8f; color:#ffffff; padding:12px 22px; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:15px" style-hover="background:#093a70">Ask us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">03 — SERVICES</div>
+      <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 36px; color:#0b2440">What we supply</h2>
+      <div style="display:flex; flexDirection:column; gap:16px">
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:32px 34px; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:32px; alignItems:center">
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:24px; fontWeight:800; margin:0; color:#0b2440; letterSpacing:-0.4px">Labour services</h3>
+          <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">Skilled and unskilled manpower for erection, maintenance, shutdown and general plant work, deployed shift-wise or contract-wise.</p>
+          <div style="display:flex; gap:8px; flexWrap:wrap; justifyContent:flex-end">
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">SKILLED</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">UNSKILLED</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">SHUTDOWN CREWS</span>
+          </div>
+        </div>
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:32px 34px; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:32px; alignItems:center">
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:24px; fontWeight:800; margin:0; color:#0b2440; letterSpacing:-0.4px">Machine operators</h3>
+          <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">Trained operators for pouch machines, presses and packaging lines, along with automation-supported process equipment.</p>
+          <div style="display:flex; gap:8px; flexWrap:wrap; justifyContent:flex-end">
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">POUCH MACHINE</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">WAX &amp; FILTER PRESS</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">PACKAGING LINES</span>
+          </div>
+        </div>
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:32px 34px; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:32px; alignItems:center">
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:24px; fontWeight:800; margin:0; color:#0b2440; letterSpacing:-0.4px">Technical services</h3>
+          <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">Mechanical tradesmen for fabrication, erection and maintenance jobs, including insulation and coating work.</p>
+          <div style="display:flex; gap:8px; flexWrap:wrap; justifyContent:flex-end">
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">MECHANICAL</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">WELDER</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">FITTER</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" style="borderRadius:28px; background:#0b2440; color:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#8dc0f2; marginBottom:16px">04 — OUR CLIENTS</div>
+      <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 36px; maxWidth:760px">Trusted by refineries, oil mills and chemical plants</h2>
+      <div style="display:flex; flexWrap:wrap; gap:12px">
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Budge Budge Refineries Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Kanchan Oil Industries Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Purty Vanaspati (P) Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Vinayak Oil &amp; Fats (P) Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Hemraj Industries (P) Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Burdwan Agro (P) Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Sresth Products (P) Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Sresth Ora Products (P) Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Indo Tan Chemicals</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Edible Oil Products Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Frick India Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Global Recycling</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Hindusthan Storage &amp; Distribution Co Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Hooghly Agro Products (P) Ltd.</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">RRJ Udyog LLP</div>
+        <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.22); background:rgba(255,255,255,0.05); padding:14px 26px; fontSize:16px; fontWeight:500">Soma Agro Oil (P) Ltd.</div>
+      </div>
+      <p style="margin:24px 0 0; fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:1.4px; color:#8dc0f2">CLIENT LOGOS CAN BE DROPPED IN PLACE OF THE NAMES ABOVE</p>
+    </section>
+
+    <section id="why" style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">05 — WHY CHOOSE US</div>
+      <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 36px; color:#0b2440">Built on repeat work</h2>
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr)); gap:16px">
+        <div style="borderRadius:22px; background:#f4f6f8; padding:30px 28px">
+          <div style="width:36px; height:36px; borderRadius:999px; background:#0b4a8f; marginBottom:18px"></div>
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:19px; fontWeight:700; margin:0 0 10px; color:#0b2440">Since 2002</h3>
+          <p style="margin:0; fontSize:15px; lineHeight:1.6; color:#4a5866">More than two decades of continuous work in process plants across West Bengal.</p>
+        </div>
+        <div style="borderRadius:22px; background:#f4f6f8; padding:30px 28px">
+          <div style="width:36px; height:36px; borderRadius:999px; background:#0b4a8f; marginBottom:18px"></div>
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:19px; fontWeight:700; margin:0 0 10px; color:#0b2440">Skilled workforce</h3>
+          <p style="margin:0; fontSize:15px; lineHeight:1.6; color:#4a5866">Welders, fitters, mechanical hands and machine operators experienced in plant conditions.</p>
+        </div>
+        <div style="borderRadius:22px; background:#f4f6f8; padding:30px 28px">
+          <div style="width:36px; height:36px; borderRadius:999px; background:#0b4a8f; marginBottom:18px"></div>
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:19px; fontWeight:700; margin:0 0 10px; color:#0b2440">Safety discipline</h3>
+          <p style="margin:0; fontSize:15px; lineHeight:1.6; color:#4a5866">Supervised crews and safe practice on height, hot and confined-space jobs.</p>
+        </div>
+        <div style="borderRadius:22px; background:#f4f6f8; padding:30px 28px">
+          <div style="width:36px; height:36px; borderRadius:999px; background:#0b4a8f; marginBottom:18px"></div>
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:19px; fontWeight:700; margin:0 0 10px; color:#0b2440">Reliable mobilisation</h3>
+          <p style="margin:0; fontSize:15px; lineHeight:1.6; color:#4a5866">Manpower on site to schedule, with clear documentation and GST-compliant billing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">06 — CONTACT</div>
+      <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 36px; color:#0b2440">Tell us the job</h2>
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(230px,1fr)); gap:20px">
+        <div style="display:flex; flexDirection:column; gap:16px">
+          <div style="borderRadius:22px; background:#f4f6f8; padding:30px 28px">
+            <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89; marginBottom:10px">ADDRESS</div>
+            <div style="fontSize:17px; lineHeight:1.6; color:#1c2a37">Naba Fab Engineering<br />2/280 Kapasdanga, Hooghly - 712103<br />West Bengal, India</div>
+          </div>
+          <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(230px,1fr)); gap:16px">
+            <a href="tel:26819170" style="borderRadius:22px; background:#f4f6f8; padding:26px 24px; display:block" style-hover="background:#e7eef6">
+              <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89; marginBottom:10px">PHONE</div>
+              <div style="fontFamily:'Archivo',sans-serif; fontSize:22px; fontWeight:800; color:#0b4a8f">26819170</div>
+            </a>
+            <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" style="borderRadius:22px; background:#0b4a8f; padding:26px 24px; display:block" style-hover="background:#093a70">
+              <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#8dc0f2; marginBottom:10px">WHATSAPP</div>
+              <div style="fontFamily:'Archivo',sans-serif; fontSize:22px; fontWeight:800; color:#ffffff">9051099777</div>
+            </a>
+          </div>
+          <sc-if value="{{ showMap }}" hint-placeholder-val="{{ true }}">
+            <div style="borderRadius:22px; overflow:hidden; background:#f4f6f8; height:260px">
+              <iframe title="Naba Fab Engineering location" src="https://www.google.com/maps?q=Kapasdanga,+Hooghly+712103,+West+Bengal,+India&amp;output=embed" style="width:100%; height:100%; border:0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </sc-if>
+        </div>
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:34px 32px">
+          <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; flexDirection:column; gap:14px; padding:40px 0">
+              <div style="fontFamily:'Archivo',sans-serif; fontSize:26px; fontWeight:800; color:#0b2440">Enquiry noted.</div>
+              <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">For anything urgent, WhatsApp 9051099777 and we will respond the same day.</p>
+            </div>
+          </sc-if>
+          <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+            <form onSubmit="{{ submit }}" style="display:flex; flexDirection:column; gap:18px">
+              <div style="display:flex; flexDirection:column; gap:8px">
+                <label for="nf2-name" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">NAME</label>
+                <input id="nf2-name" name="name" required="required" style="padding:14px 18px; borderRadius:999px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b" style-focus="borderColor:#0b4a8f; outline:none" />
+              </div>
+              <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(230px,1fr)); gap:16px">
+                <div style="display:flex; flexDirection:column; gap:8px">
+                  <label for="nf2-company" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">COMPANY</label>
+                  <input id="nf2-company" name="company" style="padding:14px 18px; borderRadius:999px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b" style-focus="borderColor:#0b4a8f; outline:none" />
+                </div>
+                <div style="display:flex; flexDirection:column; gap:8px">
+                  <label for="nf2-phone" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">PHONE</label>
+                  <input id="nf2-phone" name="phone" required="required" style="padding:14px 18px; borderRadius:999px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b" style-focus="borderColor:#0b4a8f; outline:none" />
+                </div>
+              </div>
+              <div style="display:flex; flexDirection:column; gap:8px">
+                <label for="nf2-job" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">REQUIREMENT</label>
+                <textarea id="nf2-job" name="job" rows="5" placeholder="Type of work, location, manpower needed, timeline" style="padding:16px 18px; borderRadius:20px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b; resize:vertical" style-focus="borderColor:#0b4a8f; outline:none"></textarea>
+              </div>
+              <button type="submit" style="marginTop:6px; padding:16px 24px; borderRadius:999px; background:#0b4a8f; color:#ffffff; border:none; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; cursor:pointer" style-hover="background:#093a70">Send enquiry</button>
+              <p style="margin:0; fontSize:13px; lineHeight:1.5; color:#7b8894">Or reach us directly on WhatsApp at 9051099777.</p>
+            </form>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+
+    <footer style="borderRadius:28px; background:#081b31; color:#a9bdd2; padding:clamp(28px,4vw,44px) clamp(24px,4vw,56px)">
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr)); gap:40px; alignItems:start">
+        <div>
+          <img src="uploads/logo.png" alt="Naba Fab Engineering" style="width:200px; display:block; borderRadius:12px; marginBottom:16px" />
+          <div style="fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:20px; color:#ffffff; letterSpacing:-0.3px">NABA FAB ENGINEERING</div>
+          <div style="fontSize:15px; lineHeight:1.6; marginTop:12px">2/280 Kapasdanga, Hooghly - 712103<br />West Bengal, India</div>
+          <div style="fontSize:15px; marginTop:12px">www.nfengi.com</div>
+        </div>
+        <div style="display:flex; flexDirection:column; gap:10px; fontSize:15px">
+          <a href="#about" style="color:#a9bdd2">About</a>
+          <a href="#specialist" style="color:#a9bdd2">Specialist In</a>
+          <a href="#services" style="color:#a9bdd2">Services</a>
+          <a href="#clients" style="color:#a9bdd2">Clients</a>
+          <a href="#contact" style="color:#a9bdd2">Contact</a>
+        </div>
+        <sc-if value="{{ showCredentials }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex; flexDirection:column; gap:10px; alignItems:flex-start">
+            <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.18); padding:10px 20px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px">GST 19AGUPD7584J1ZJ</div>
+            <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.18); padding:10px 20px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px">PAN AGUPD7584J</div>
+            <div style="borderRadius:999px; border:1px solid rgba(255,255,255,0.18); padding:10px 20px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px">EST. 2002 · WEST BENGAL</div>
+          </div>
+        </sc-if>
+      </div>
+      <div style="marginTop:32px; paddingTop:20px; borderTop:1px solid rgba(255,255,255,0.12); fontSize:13px; color:#7f95ad">© 2026 Naba Fab Engineering. All rights reserved.</div>
+    </footer>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showMap&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contact&quot;},&quot;showCredentials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Footer&quot;}}">
+class Component extends DCLogic {
+  state = { sent: false };
+  renderVals() {
+    return {
+      showMap: this.props.showMap ?? true,
+      showCredentials: this.props.showCredentials ?? true,
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      submit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

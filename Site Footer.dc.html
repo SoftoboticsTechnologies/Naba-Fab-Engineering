@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<style>
+  @media (max-width: 480px) {
+    .nfe-fab-group { right: 14px !important; bottom: 14px !important; gap: 10px !important; }
+    .nfe-fab-group a { width: 48px !important; height: 48px !important; }
+    .nfe-fab-group svg { width: 22px !important; height: 22px !important; }
+    .nfe-back-to-top { left: 14px !important; bottom: 14px !important; width: 42px !important; height: 42px !important; }
+  }
+</style>
+</helmet>
+
+<footer style="width:100%; background:#0a1b30; color:#a9bdd2; padding:clamp(32px,4.5vw,52px) clamp(12px,3vw,28px) 0; fontFamily:'IBM Plex Sans',system-ui,sans-serif">
+  <div style="maxWidth:1360px; margin:0 auto">
+
+    <!-- Columns -->
+    <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr)); gap:40px; alignItems:start">
+
+      <!-- Brand -->
+      <div>
+        <a href="index.html" style="display:inline-block; textDecoration:none; marginBottom:16px">
+          <img
+            src="uploads/logo.png"
+            alt="Naba Fab Engineering"
+            style="height:44px; width:auto; display:block; borderRadius:8px"
+          />
+        </a>
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:20px; fontWeight:800; color:#ffffff; lineHeight:1.25; marginBottom:6px">Naba Fab Engineering</div>
+        <div style="fontFamily:'IBM Plex Sans',sans-serif; fontSize:11px; fontWeight:700; letterSpacing:1px; color:#5b9bd8; marginBottom:20px">INDUSTRIAL ENGINEERING &amp; LABOUR SUPPLIER</div>
+
+        <div style="display:flex; alignItems:flex-start; gap:10px; marginBottom:12px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5b8fc7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0; marginTop:2px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span style="fontSize:14px; lineHeight:1.6; color:#c3d2e2">2/280 Kapasdanga, Hooghly - 712103<br />West Bengal, India</span>
+        </div>
+        <a href="tel:9051099777" style="display:flex; alignItems:center; gap:10px; marginBottom:10px; fontSize:14px; color:#c3d2e2; textDecoration:none; transition:color 0.2s" style-hover="color:#ffffff">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5b8fc7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          +91 9051099777
+        </a>
+        <a href="https://www.nfengi.com" target="_blank" rel="noreferrer" style="display:flex; alignItems:center; gap:10px; fontSize:14px; color:#c3d2e2; textDecoration:none; transition:color 0.2s" style-hover="color:#ffffff">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5b8fc7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          www.nfengi.com
+        </a>
+
+        <div style="marginTop:22px; fontSize:13px; color:#7f95ad; marginBottom:12px">Follow us</div>
+        <div style="display:flex; gap:10px">
+          <a href="#" aria-label="Facebook" style="width:34px; height:34px; borderRadius:999px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); display:grid; placeItems:center; color:#ffffff; textDecoration:none; fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:14px; transition:background 0.2s" style-hover="background:#0b4a8f">f</a>
+          <a href="#" aria-label="LinkedIn" style="width:34px; height:34px; borderRadius:999px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); display:grid; placeItems:center; color:#ffffff; textDecoration:none; fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:12px; transition:background 0.2s" style-hover="background:#0b4a8f">in</a>
+          <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" aria-label="WhatsApp" style="width:34px; height:34px; borderRadius:999px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14); display:grid; placeItems:center; color:#ffffff; textDecoration:none; transition:background 0.2s" style-hover="background:#25D366">
+            <svg width="15" height="15" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.9l-4.4-7c-18.5-29.4-28.3-63.3-28.3-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.5 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.7-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.6-28.9-75-65.4-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:14px; fontWeight:800; letterSpacing:0.6px; color:#f2a154; marginBottom:10px">COMPANY</div>
+        <div style="width:28px; height:3px; borderRadius:2px; background:#f2a154; marginBottom:18px"></div>
+        <div style="display:flex; flexDirection:column; gap:6px">
+          <a href="About.dc.html" style="padding:8px 0; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s, transform 0.2s; transform:translateX(0)" style-hover="color:#ffffff; transform:translateX(4px)">About Us</a>
+          <a href="Specialist.dc.html" style="padding:8px 0; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s, transform 0.2s; transform:translateX(0)" style-hover="color:#ffffff; transform:translateX(4px)">Specialisation</a>
+          <a href="Services.dc.html" style="padding:8px 0; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s, transform 0.2s; transform:translateX(0)" style-hover="color:#ffffff; transform:translateX(4px)">Services</a>
+          <a href="Clients.dc.html" style="padding:8px 0; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s, transform 0.2s; transform:translateX(0)" style-hover="color:#ffffff; transform:translateX(4px)">Clients</a>
+          <a href="Contact.dc.html" style="padding:8px 0; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s, transform 0.2s; transform:translateX(0)" style-hover="color:#ffffff; transform:translateX(4px)">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Get in touch -->
+      <div>
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:14px; fontWeight:800; letterSpacing:0.6px; color:#f2a154; marginBottom:10px">GET IN TOUCH</div>
+        <div style="width:28px; height:3px; borderRadius:2px; background:#f2a154; marginBottom:18px"></div>
+
+        <a href="tel:26819170" style="display:flex; alignItems:center; gap:10px; padding:8px 0; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s" style-hover="color:#ffffff">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5b8fc7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          +91 26819170
+        </a>
+        <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" style="display:flex; alignItems:center; gap:10px; padding:8px 0; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s" style-hover="color:#ffffff">
+          <svg width="16" height="16" viewBox="0 0 448 512" fill="#25D366" style="flexShrink:0"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.9l-4.4-7c-18.5-29.4-28.3-63.3-28.3-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.5 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.7-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.6-28.9-75-65.4-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+          +91 9051099777
+        </a>
+        <a href="https://www.nfengi.com" target="_blank" rel="noreferrer" style="display:flex; alignItems:center; gap:10px; padding:8px 0 20px; color:#c3d2e2; textDecoration:none; fontSize:14.5px; transition:color 0.2s" style-hover="color:#ffffff">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5b8fc7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          www.nfengi.com
+        </a>
+
+        <a href="Contact.dc.html" style="display:inline-flex; alignItems:center; justifyContent:center; borderRadius:10px; background:#0b4a8f; color:#ffffff; padding:12px 26px; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:14.5px; textDecoration:none; transition:background 0.2s" style-hover="background:#1769c4">Get a quote</a>
+      </div>
+
+      <!-- Company info -->
+      <div>
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:14px; fontWeight:800; letterSpacing:0.6px; color:#f2a154; marginBottom:10px">COMPANY INFO</div>
+        <div style="width:28px; height:3px; borderRadius:2px; background:#f2a154; marginBottom:18px"></div>
+
+        <div style="display:flex; flexDirection:column; gap:10px">
+          <div style="display:flex; alignItems:center; gap:10px; borderRadius:10px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.05); padding:10px 16px">
+            <span style="fontFamily:'IBM Plex Mono',monospace; fontSize:10px; fontWeight:700; letterSpacing:0.6px; color:#5b9bd8; background:rgba(91,155,216,0.15); borderRadius:6px; padding:4px 7px">GST</span>
+            <span style="fontFamily:'IBM Plex Mono',monospace; fontSize:12.5px; fontWeight:600; color:#ffffff; letterSpacing:0.3px">19AGUPD7584J1ZJ</span>
+          </div>
+
+          <div style="display:flex; alignItems:center; gap:10px; borderRadius:10px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.05); padding:10px 16px">
+            <span style="fontFamily:'IBM Plex Mono',monospace; fontSize:10px; fontWeight:700; letterSpacing:0.6px; color:#5b9bd8; background:rgba(91,155,216,0.15); borderRadius:6px; padding:4px 7px">PAN</span>
+            <span style="fontFamily:'IBM Plex Mono',monospace; fontSize:12.5px; fontWeight:600; color:#ffffff; letterSpacing:0.3px">AGUPD7584J</span>
+          </div>
+
+          <div style="display:flex; alignItems:center; gap:10px; borderRadius:10px; border:1px solid rgba(255,255,255,0.14); background:rgba(255,255,255,0.05); padding:10px 16px">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5b9bd8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 21v-6h6v6"></path></svg>
+            <span style="fontFamily:'IBM Plex Mono',monospace; fontSize:12.5px; fontWeight:600; color:#ffffff; letterSpacing:0.3px">EST. 2002 · WEST BENGAL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="marginTop:36px; paddingTop:20px; paddingBottom:20px; borderTop:1px solid rgba(255,255,255,0.1); display:flex; flexWrap:wrap; gap:12px; justifyContent:space-between; alignItems:center; fontSize:13px; color:#7f95ad">
+      <span>© 2026 Naba Fab Engineering. All rights reserved.</span>
+      <span>Twenty-plus years of proven partner across West Bengal.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating action buttons -->
+<div class="nfe-fab-group" style="position:fixed; right:20px; bottom:20px; zIndex:200; display:flex; flexDirection:column; gap:12px">
+  <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" style="width:56px; height:56px; borderRadius:999px; background:#25D366; display:grid; placeItems:center; boxShadow:0 8px 20px rgba(37,211,102,0.4); textDecoration:none; transition:transform 0.2s" style-hover="transform:scale(1.08)">
+    <svg width="26" height="26" viewBox="0 0 448 512" fill="#ffffff"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 431.9c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 351.9l-4.4-7c-18.5-29.4-28.3-63.3-28.3-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.5 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.7-3.2 3.7-6.5 4.2-12 1.4-32.4-16.2-53.6-28.9-75-65.4-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
+  </a>
+  <a href="tel:9051099777" aria-label="Call us" style="width:56px; height:56px; borderRadius:999px; background:#0b4a8f; display:grid; placeItems:center; boxShadow:0 8px 20px rgba(11,74,143,0.4); textDecoration:none; transition:transform 0.2s" style-hover="transform:scale(1.08); background:#093a70">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+  </a>
+</div>
+
+<a href="#top" aria-label="Back to top" class="nfe-back-to-top" style="position:fixed; left:20px; bottom:20px; zIndex:200; width:48px; height:48px; borderRadius:999px; background:#0b2440; display:grid; placeItems:center; boxShadow:0 8px 20px rgba(11,36,64,0.4); textDecoration:none; transition:transform 0.2s, background 0.2s" style-hover="transform:scale(1.08); background:#093a70">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</a>
+</x-dc>
+</body>
+</html>

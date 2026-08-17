@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; overflow-x: hidden; background: #eef1f4; color: #16202b; font-family: "IBM Plex Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0b4a8f; }
+  a:hover { color: #1769c4; }
+
+  @media (max-width: 640px) {
+    .nfe-clients-decor { display: none; }
+  }
+</style>
+</helmet>
+<div style="display:flex; flexDirection:column; minHeight:100vh; background:#eef1f4">
+  <dc-import name="Site Header" active="Clients" hint-size="100%,68px"></dc-import>
+  <main style="flex:1; minWidth:0; width:100%; maxWidth:1360px; margin:0 auto; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
+    <section style="borderRadius:28px; background:#f6f8fb; padding:clamp(28px,4.5vw,56px); position:relative; overflow:hidden">
+
+      <!-- decorative dotted grid -->
+      <svg class="nfe-clients-decor" style="position:absolute; top:20px; left:20px; opacity:0.5; pointerEvents:none" width="120" height="90" viewBox="0 0 120 90">
+        <defs><pattern id="nfe-dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#c7d2dd"></circle></pattern></defs>
+        <rect width="120" height="90" fill="url(#nfe-dots)"></rect>
+      </svg>
+
+      <!-- decorative faint industrial silhouette -->
+      <svg class="nfe-clients-decor" style="position:absolute; top:10px; right:-10px; opacity:0.12; pointerEvents:none" width="260" height="200" viewBox="0 0 260 200" fill="none" stroke="#0b4a8f" stroke-width="3">
+        <rect x="20" y="70" width="18" height="120"></rect>
+        <rect x="50" y="40" width="18" height="150"></rect>
+        <rect x="80" y="90" width="18" height="100"></rect>
+        <circle cx="180" cy="80" r="34"></circle>
+        <rect x="165" y="80" width="30" height="110"></rect>
+        <line x1="10" y1="190" x2="250" y2="190"></line>
+      </svg>
+
+      <div style="position:relative; textAlign:center; maxWidth:760px; margin:0 auto">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#0b4a8f; marginBottom:16px">OUR CLIENTS</div>
+        <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(28px,4vw,44px); lineHeight:1.15; fontWeight:800; letterSpacing:-1.2px; margin:0 0 20px; color:#0b2440">Trusted by refineries, oil mills and chemical plants</h1>
+        <div style="width:56px; height:4px; borderRadius:2px; background:#f2994a; margin:0 auto 20px"></div>
+        <p style="margin:0; fontSize:16px; color:#5b6975">We are proud to partner with leading organisations across the industry.</p>
+      </div>
+
+      <div style="position:relative; marginTop:40px; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(230px,1fr)); gap:16px">
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><rect x="3" y="11" width="3.5" height="9" rx="1"></rect><rect x="8" y="7" width="3.5" height="13" rx="1"></rect><rect x="13" y="4" width="3.5" height="16" rx="1"></rect><rect x="18" y="9" width="3" height="11" rx="1"></rect><line x1="2" y1="21" x2="22" y2="21"></line></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Budge Budge Refineries Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M3 21V11l5 3v-3l5 3V8l5 3v10z"></path><line x1="3" y1="21" x2="21" y2="21"></line></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Kanchan Oil Industries Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M12 2s7 7.5 7 12.5A7 7 0 0 1 5 14.5C5 9.5 12 2 12 2z"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Purty Vanaspati (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Vinayak Oil &amp; Fats (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Hemraj Industries (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Burdwan Agro (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M9 2v6L3 20a1 1 0 0 0 1 2h16a1 1 0 0 0 1-2L15 8V2"></path><line x1="8" y1="2" x2="16" y2="2"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Sresth Products (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Sresth Ora Products (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M9 2v6L3 20a1 1 0 0 0 1 2h16a1 1 0 0 0 1-2L15 8V2"></path><line x1="8" y1="2" x2="16" y2="2"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Indo Tan Chemicals</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M12 2s7 7.5 7 12.5A7 7 0 0 1 5 14.5C5 9.5 12 2 12 2z"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Edible Oil Products Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M3 21V11l5 3v-3l5 3V8l5 3v10z"></path><line x1="3" y1="21" x2="21" y2="21"></line></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Frick India Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"></path><path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"></path><path d="M14 16l-3 3 3 3"></path><path d="M8.293 13.596L7.196 9.5 3.1 10.598"></path><path d="M9.344 5.811L11.174 2.5l3.3 1.83"></path><path d="M15.937 8.404l4.096-1.098-1.098-4.096"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Global Recycling</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><ellipse cx="12" cy="5" rx="7" ry="3"></ellipse><path d="M5 5v14a7 3 0 0 0 14 0V5"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Hindusthan Storage &amp; Distribution Co Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M7 20h10"></path><path d="M10 20c0-8 4-8 4-14"></path><path d="M5 8c1.5 4 4 4 6 2"></path><path d="M19 8c-1.5 4-4 4-6 2"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Hooghly Agro Products (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M8 12l3 3 5-5"></path><path d="M2 12h4l3-3 4 4 3-3h4"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">RRJ Udyog LLP</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+        <div style="borderRadius:16px; background:#ffffff; boxShadow:0 4px 16px rgba(11,36,64,0.06); padding:20px 22px; display:flex; alignItems:flex-start; gap:14px">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M12 2s7 7.5 7 12.5A7 7 0 0 1 5 14.5C5 9.5 12 2 12 2z"></path></svg>
+          <div><div style="fontFamily:'Archivo',sans-serif; fontSize:15.5px; fontWeight:700; color:#0b2440; lineHeight:1.3">Soma Agro Oil (P) Ltd.</div><div style="width:24px; height:2px; background:#f2994a; marginTop:8px"></div></div>
+        </div>
+
+      </div>
+
+      <div style="position:relative; marginTop:32px; display:flex; justifyContent:center">
+        <a href="Contact.dc.html" style="display:inline-flex; alignItems:center; gap:10px; borderRadius:999px; background:#0b4a8f; color:#ffffff; padding:15px 28px; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; textDecoration:none; transition:background 0.2s" style-hover="background:#093a70">
+          Work with us
+          <span style="width:24px; height:24px; borderRadius:999px; background:#ffffff; display:grid; placeItems:center">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <dc-import name="Site Footer" hint-size="100%,320px"></dc-import>
+</div>
+</x-dc>
+</body>
+</html>

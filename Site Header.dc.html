@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+
+<body>
+
+<x-dc>
+
+<helmet>
+<style>
+  .nfe-nav-link { padding:8px 2px; font-size:15px; font-weight:600; color:#33414f; text-decoration:none; white-space:nowrap; transition:color 0.2s; }
+  .nfe-nav-link:hover { color:#1769c4; }
+  .nfe-nav-link-active { padding:8px 2px; font-size:15px; font-weight:700; color:#1769c4; text-decoration:none; white-space:nowrap; }
+
+  .nfe-header-inner { display:flex; align-items:center; gap:20px; padding:14px clamp(12px,3vw,28px); }
+  .nfe-header-nav { flex:1; min-width:0; display:flex; align-items:center; justify-content:center; gap:22px; overflow-x:auto; scrollbar-width:none; }
+  .nfe-header-nav::-webkit-scrollbar { display:none; }
+  .nfe-header-logo-text { font-size:17px; }
+  .nfe-header-divider { width:1px; align-self:stretch; background:#e2e8ee; flex-shrink:0; }
+
+  @media (max-width: 900px) {
+    .nfe-header-tagline { display: none; }
+  }
+
+  @media (max-width: 760px) {
+    .nfe-header-inner { flex-wrap: wrap; row-gap:10px; padding-top:10px; padding-bottom:10px; }
+    .nfe-header-divider { display: none; }
+    .nfe-header-nav {
+      order: 3;
+      flex-basis: 100%;
+      justify-content: flex-start;
+      gap: 16px;
+      padding-top: 10px;
+      border-top: 1px solid #dde3e9;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .nfe-header-logo-img { height:32px !important; }
+    .nfe-header-logo-text { font-size:15px; max-width:150px; }
+    .nfe-header-phone-label { display: none; }
+    .nfe-header-nav { gap:12px; }
+    .nfe-nav-link, .nfe-nav-link-active { font-size:13px; }
+  }
+</style>
+</helmet>
+
+<header style="position:sticky; top:0; zIndex:50; background:#ffffff; borderBottom:1px solid #e5e9ee; boxShadow:0 1px 0 rgba(11,36,64,0.03); fontFamily:'IBM Plex Sans',system-ui,sans-serif">
+
+  <div class="nfe-header-inner" style="maxWidth:1360px; margin:0 auto">
+
+    <!-- Logo + Company Name -->
+    <a href="index.html" style="flexShrink:0; display:flex; alignItems:center; gap:10px; textDecoration:none; minWidth:0">
+
+      <img
+        class="nfe-header-logo-img"
+        src="uploads/logo.png"
+        alt="Naba Fab Engineering"
+        style="height:40px; width:auto; display:block; borderRadius:8px; flexShrink:0"
+      />
+
+      <div style="display:flex; flexDirection:column; lineHeight:1.2; minWidth:0">
+        <span class="nfe-header-logo-text" style="fontFamily:'Archivo',sans-serif; fontWeight:800; color:#0b2440; whiteSpace:nowrap; overflow:hidden; textOverflow:ellipsis">
+          Naba Fab Engineering
+        </span>
+        <span class="nfe-header-tagline" style="fontFamily:'IBM Plex Mono',monospace; fontSize:10px; letterSpacing:1.4px; color:#6b7a89; whiteSpace:nowrap">
+          EST. 2002 · WEST BENGAL
+        </span>
+      </div>
+
+    </a>
+
+    <!-- Navigation -->
+    <nav class="nfe-header-nav">
+
+      <div class="nfe-nav-item">
+        <sc-if value="{{ active === 'Home' }}" hint-placeholder-val="{{ false }}"><a href="index.html" class="nfe-nav-link-active">Home</a></sc-if>
+        <sc-if value="{{ active !== 'Home' }}" hint-placeholder-val="{{ true }}"><a href="index.html" class="nfe-nav-link">Home</a></sc-if>
+      </div>
+
+      <div class="nfe-nav-item">
+        <sc-if value="{{ active === 'About' }}" hint-placeholder-val="{{ false }}"><a href="About.dc.html" class="nfe-nav-link-active">About</a></sc-if>
+        <sc-if value="{{ active !== 'About' }}" hint-placeholder-val="{{ true }}"><a href="About.dc.html" class="nfe-nav-link">About</a></sc-if>
+      </div>
+
+      <div class="nfe-nav-item">
+        <sc-if value="{{ active === 'Services' }}" hint-placeholder-val="{{ false }}"><a href="Services.dc.html" class="nfe-nav-link-active">Services</a></sc-if>
+        <sc-if value="{{ active !== 'Services' }}" hint-placeholder-val="{{ true }}"><a href="Services.dc.html" class="nfe-nav-link">Services</a></sc-if>
+      </div>
+
+      <div class="nfe-nav-item">
+        <sc-if value="{{ active === 'Specialist' }}" hint-placeholder-val="{{ false }}"><a href="Specialist.dc.html" class="nfe-nav-link-active">Specialist In</a></sc-if>
+        <sc-if value="{{ active !== 'Specialist' }}" hint-placeholder-val="{{ true }}"><a href="Specialist.dc.html" class="nfe-nav-link">Specialist In</a></sc-if>
+      </div>
+
+      <div class="nfe-nav-item">
+        <sc-if value="{{ active === 'Clients' }}" hint-placeholder-val="{{ false }}"><a href="Clients.dc.html" class="nfe-nav-link-active">Clients</a></sc-if>
+        <sc-if value="{{ active !== 'Clients' }}" hint-placeholder-val="{{ true }}"><a href="Clients.dc.html" class="nfe-nav-link">Clients</a></sc-if>
+      </div>
+
+      <div class="nfe-nav-item">
+        <sc-if value="{{ active === 'Contact' }}" hint-placeholder-val="{{ false }}"><a href="Contact.dc.html" class="nfe-nav-link-active">Contact</a></sc-if>
+        <sc-if value="{{ active !== 'Contact' }}" hint-placeholder-val="{{ true }}"><a href="Contact.dc.html" class="nfe-nav-link">Contact</a></sc-if>
+      </div>
+
+    </nav>
+
+    <div class="nfe-header-divider"></div>
+
+    <!-- Phone -->
+    <a
+      href="tel:9051099777"
+      style="flexShrink:0; display:flex; alignItems:center; gap:10px; borderRadius:999px; background:#0b4a8f; color:#ffffff; padding:11px 22px; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:15px; whiteSpace:nowrap; textDecoration:none; boxShadow:0 4px 14px rgba(11,74,143,0.28)"
+      style-hover="background:#093a70"
+    >
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flexShrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span class="nfe-header-phone-label">9051099777</span>
+    </a>
+
+  </div>
+
+</header>
+
+</x-dc>
+
+</body>
+</html>
