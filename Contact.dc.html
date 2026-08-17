@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #eef1f4; color: #16202b; font-family: "IBM Plex Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0b4a8f; }
+  a:hover { color: #1769c4; }
+</style>
+</helmet>
+<div style="display:flex; flexDirection:column; minHeight:100vh; background:#eef1f4">
+  <dc-import name="Site Header" hint-size="100%,68px"></dc-import>
+  <main style="flex:1; minWidth:0; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
+    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">CONTACT</div>
+      <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(28px,4vw,44px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 36px; color:#0b2440">Tell us the job</h1>
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(300px,1fr)); gap:20px">
+        <div style="display:flex; flexDirection:column; gap:16px">
+          <div style="borderRadius:22px; background:#f4f6f8; padding:30px 28px">
+            <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89; marginBottom:10px">ADDRESS</div>
+            <div style="fontSize:17px; lineHeight:1.6; color:#1c2a37">Naba Fab Engineering<br />2/280 Kapasdanga, Hooghly - 712103<br />West Bengal, India</div>
+          </div>
+          <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(180px,1fr)); gap:16px">
+            <a href="tel:26819170" style="borderRadius:22px; background:#f4f6f8; padding:26px 24px; display:block; textDecoration:none" style-hover="background:#e7eef6">
+              <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89; marginBottom:10px">PHONE</div>
+              <div style="fontFamily:'Archivo',sans-serif; fontSize:22px; fontWeight:800; color:#0b4a8f">26819170</div>
+            </a>
+            <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" style="borderRadius:22px; background:#0b4a8f; padding:26px 24px; display:block; textDecoration:none" style-hover="background:#093a70">
+              <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#8dc0f2; marginBottom:10px">WHATSAPP</div>
+              <div style="fontFamily:'Archivo',sans-serif; fontSize:22px; fontWeight:800; color:#ffffff">9051099777</div>
+            </a>
+          </div>
+          <div style="borderRadius:22px; overflow:hidden; background:#f4f6f8; height:260px">
+            <iframe title="Naba Fab Engineering location" src="https://www.google.com/maps?q=Kapasdanga,+Hooghly+712103,+West+Bengal,+India&amp;output=embed" style="width:100%; height:100%; border:0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:34px 32px">
+          <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex; flexDirection:column; gap:14px; padding:40px 0">
+              <div style="fontFamily:'Archivo',sans-serif; fontSize:26px; fontWeight:800; color:#0b2440">Enquiry noted.</div>
+              <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">For anything urgent, message 9051099777 and we will respond the same day.</p>
+            </div>
+          </sc-if>
+          <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+            <form onSubmit="{{ submit }}" style="display:flex; flexDirection:column; gap:18px">
+              <div style="display:flex; flexDirection:column; gap:8px">
+                <label for="nf3-name" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">NAME</label>
+                <input id="nf3-name" name="name" required="required" style="padding:14px 18px; borderRadius:999px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b" style-focus="borderColor:#0b4a8f; outline:none" />
+              </div>
+              <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(160px,1fr)); gap:16px">
+                <div style="display:flex; flexDirection:column; gap:8px">
+                  <label for="nf3-company" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">COMPANY</label>
+                  <input id="nf3-company" name="company" style="padding:14px 18px; borderRadius:999px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b" style-focus="borderColor:#0b4a8f; outline:none" />
+                </div>
+                <div style="display:flex; flexDirection:column; gap:8px">
+                  <label for="nf3-phone" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">PHONE</label>
+                  <input id="nf3-phone" name="phone" required="required" style="padding:14px 18px; borderRadius:999px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b" style-focus="borderColor:#0b4a8f; outline:none" />
+                </div>
+              </div>
+              <div style="display:flex; flexDirection:column; gap:8px">
+                <label for="nf3-job" style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.4px; color:#6b7a89">REQUIREMENT</label>
+                <textarea id="nf3-job" name="job" rows="5" placeholder="Type of work, location, manpower needed, timeline" style="padding:16px 18px; borderRadius:20px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b; resize:vertical"></textarea>
+              </div>
+              <button type="submit" style="marginTop:6px; padding:16px 24px; borderRadius:999px; background:#0b4a8f; color:#ffffff; border:none; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; cursor:pointer" style-hover="background:#093a70">Send enquiry</button>
+            </form>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+    <dc-import name="Site Footer" hint-size="100%,320px"></dc-import>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sent: false };
+  renderVals() {
+    return {
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      submit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

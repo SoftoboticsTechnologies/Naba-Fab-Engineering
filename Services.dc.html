@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #eef1f4; color: #16202b; font-family: "IBM Plex Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0b4a8f; }
+  a:hover { color: #1769c4; }
+</style>
+</helmet>
+<div style="display:flex; flexDirection:column; minHeight:100vh; background:#eef1f4">
+  <dc-import name="Site Header" hint-size="100%,68px"></dc-import>
+  <main style="flex:1; minWidth:0; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
+
+    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">SERVICES</div>
+      <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(28px,4vw,44px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 36px; color:#0b2440">What we supply</h1>
+      <div style="display:flex; flexDirection:column; gap:16px">
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:32px 34px; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:32px; alignItems:center">
+          <h2 style="fontFamily:'Archivo',sans-serif; fontSize:24px; fontWeight:800; margin:0; color:#0b2440; letterSpacing:-0.4px">Labour services</h2>
+          <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">Skilled and unskilled manpower for erection, maintenance, shutdown and general plant work, deployed shift-wise or contract-wise.</p>
+          <div style="display:flex; gap:8px; flexWrap:wrap">
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">SKILLED</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">UNSKILLED</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">SHUTDOWN CREWS</span>
+          </div>
+        </div>
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:32px 34px; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:32px; alignItems:center">
+          <h2 style="fontFamily:'Archivo',sans-serif; fontSize:24px; fontWeight:800; margin:0; color:#0b2440; letterSpacing:-0.4px">Machine operators</h2>
+          <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">Trained operators for pouch machines, presses and packaging lines, along with automation-supported process equipment.</p>
+          <div style="display:flex; gap:8px; flexWrap:wrap">
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">POUCH MACHINE</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">WAX &amp; FILTER PRESS</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">PACKAGING LINES</span>
+          </div>
+        </div>
+        <div style="borderRadius:22px; border:1px solid #dfe4e9; padding:32px 34px; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:32px; alignItems:center">
+          <h2 style="fontFamily:'Archivo',sans-serif; fontSize:24px; fontWeight:800; margin:0; color:#0b2440; letterSpacing:-0.4px">Technical services</h2>
+          <p style="margin:0; fontSize:16px; lineHeight:1.65; color:#4a5866">Mechanical tradesmen for fabrication, erection and maintenance jobs, including insulation and coating work.</p>
+          <div style="display:flex; gap:8px; flexWrap:wrap">
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">MECHANICAL</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">WELDER</span>
+            <span style="borderRadius:999px; background:#f4f6f8; padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1px; color:#5b6975">FITTER</span>
+          </div>
+        </div>
+      </div>
+      <div style="marginTop:32px; display:flex; gap:12px; flexWrap:wrap; alignItems:center">
+        <a href="Specialist.dc.html" style="borderRadius:999px; background:#0b4a8f; color:#ffffff; padding:14px 26px; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:15px; textDecoration:none" style-hover="background:#093a70">Specialist capabilities</a>
+        <a href="Contact.dc.html" style="borderRadius:999px; border:1.5px solid #c3ccd5; color:#0b2440; padding:14px 26px; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:15px; textDecoration:none" style-hover="borderColor:#0b4a8f; color:#0b4a8f">Get a quote</a>
+      </div>
+    </section>
+
+    <dc-import name="Site Footer" hint-size="100%,320px"></dc-import>
+  </main>
+</div>
+</x-dc>
+</body>
+</html>

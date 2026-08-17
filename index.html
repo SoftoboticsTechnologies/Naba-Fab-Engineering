@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #eef1f4; color: #16202b; font-family: "IBM Plex Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0b4a8f; }
+  a:hover { color: #1769c4; }
+</style>
+</helmet>
+<div style="display:flex; flexDirection:column; minHeight:100vh; background:#eef1f4">
+  <dc-import name="Site Header" hint-size="100%,68px"></dc-import>
+  <main style="flex:1; minWidth:0; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
+
+    <section style="borderRadius:28px; background:#0b2440; backgroundImage:linear-gradient(120deg,#0b2440 0%,#0b3f78 65%,#0e559f 100%); color:#ffffff; padding:clamp(28px,4.5vw,64px) clamp(24px,4vw,56px); display:grid; gridTemplateColumns:repeat(auto-fit,minmax(320px,1fr)); gap:48px; alignItems:center">
+      <div>
+        <div style="display:inline-block; borderRadius:999px; border:1px solid rgba(255,255,255,0.35); padding:8px 16px; fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.8px; color:#c8dcf3; marginBottom:24px">INDUSTRIAL ENGINEERING &amp; LABOUR SERVICES</div>
+        <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(32px,5vw,56px); lineHeight:1.06; fontWeight:800; letterSpacing:-1.5px; margin:0 0 20px">Twenty-plus years keeping plants running in West Bengal.</h1>
+        <p style="fontSize:18px; lineHeight:1.65; color:#cfe0f2; maxWidth:560px; margin:0 0 32px; textWrap:pretty">Established in 2002, Naba Fab Engineering supplies skilled labour, machine operators and technical crews to refineries, solvent extraction plants, oil mills and chemical works — from fabrication and erection to boiler, insulation and packaging operations.</p>
+        <div style="display:flex; gap:12px; flexWrap:wrap">
+          <a href="Contact.dc.html" style="borderRadius:999px; padding:16px 30px; background:#ffffff; color:#0b2440; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; textDecoration:none" style-hover="background:#e7eff8">Get a quote</a>
+          <a href="https://wa.me/919051099777" target="_blank" rel="noreferrer" style="borderRadius:999px; padding:16px 30px; border:1.5px solid rgba(255,255,255,0.5); color:#ffffff; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; textDecoration:none" style-hover="background:rgba(255,255,255,0.12)">9051099777</a>
+        </div>
+      </div>
+      <!-- <div style="borderRadius:22px; height:360px; border:1px solid rgba(255,255,255,0.25); backgroundColor:rgba(255,255,255,0.06); backgroundImage:repeating-linear-gradient(135deg,rgba(255,255,255,0.10) 0 10px,rgba(255,255,255,0) 10px 20px); display:grid; placeItems:center">
+        <span style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:1.6px; color:#bcd6ef; textAlign:center; padding:0 24px">SITE PHOTO — TANK ERECTION<br />OR PLANT STRUCTURE</span>
+      </div> -->
+      <div style="borderRadius:22px; height:360px; overflow:hidden; border:1px solid rgba(255,255,255,0.25)">
+  <img
+    src="hero.png"
+    alt="Tank erection and plant structure"
+    style="width:100%; height:100%; objectFit:cover; display:block"
+  />
+</div>
+    </section>
+
+    <section style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:20px">
+      <div style="borderRadius:22px; background:#ffffff; padding:32px 30px">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:40px; fontWeight:800; color:#0b4a8f; letterSpacing:-1px">2002</div>
+        <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.6px; color:#6b7a89; marginTop:8px">ESTABLISHED</div>
+      </div>
+      <div style="borderRadius:22px; background:#ffffff; padding:32px 30px">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:40px; fontWeight:800; color:#0b4a8f; letterSpacing:-1px">16</div>
+        <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.6px; color:#6b7a89; marginTop:8px">INDUSTRIAL CLIENTS</div>
+      </div>
+      <div style="borderRadius:22px; background:#ffffff; padding:32px 30px">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:40px; fontWeight:800; color:#0b4a8f; letterSpacing:-1px">13</div>
+        <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:11px; letterSpacing:1.6px; color:#6b7a89; marginTop:8px">SPECIALIST TRADES</div>
+      </div>
+    </section>
+
+    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+      <div style="fontFamily:'IBM Plex Mono',monospace; fontSize:12px; letterSpacing:2.2px; color:#0b4a8f; marginBottom:16px">WHAT WE DO</div>
+      <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 36px; color:#0b2440">Three ways plants use us</h2>
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(240px,1fr)); gap:16px">
+        <a href="Services.dc.html" style="borderRadius:22px; background:#f4f6f8; padding:32px 30px; textDecoration:none; display:block" style-hover="background:#e7eef6">
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:22px; fontWeight:800; margin:0 0 12px; color:#0b2440">Labour services</h3>
+          <p style="margin:0; fontSize:16px; lineHeight:1.6; color:#4a5866">Skilled and unskilled manpower for erection, maintenance and shutdown work.</p>
+        </a>
+        <a href="Services.dc.html" style="borderRadius:22px; background:#f4f6f8; padding:32px 30px; textDecoration:none; display:block" style-hover="background:#e7eef6">
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:22px; fontWeight:800; margin:0 0 12px; color:#0b2440">Machine operators</h3>
+          <p style="margin:0; fontSize:16px; lineHeight:1.6; color:#4a5866">Trained operators for pouch machines, presses and packaging lines.</p>
+        </a>
+        <a href="Services.dc.html" style="borderRadius:22px; background:#f4f6f8; padding:32px 30px; textDecoration:none; display:block" style-hover="background:#e7eef6">
+          <h3 style="fontFamily:'Archivo',sans-serif; fontSize:22px; fontWeight:800; margin:0 0 12px; color:#0b2440">Technical services</h3>
+          <p style="margin:0; fontSize:16px; lineHeight:1.6; color:#4a5866">Mechanical, welder and fitter trades for fabrication and maintenance jobs.</p>
+        </a>
+      </div>
+    </section>
+
+    <section style="borderRadius:28px; background:#0b2440; color:#ffffff; padding:clamp(24px,4vw,56px); display:grid; gridTemplateColumns:repeat(auto-fit,minmax(300px,1fr)); gap:40px; alignItems:center">
+      <div>
+        <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 14px">Specialist in process plant work</h2>
+        <p style="margin:0; fontSize:17px; lineHeight:1.7; color:#cfe0f2">Solvent extraction, refinery, hydrogenation, boiler, tank vessel fabrication and erection, insulation, fibre glass coating and more.</p>
+      </div>
+      <div style="display:flex; gap:12px; flexWrap:wrap">
+        <a href="Specialist.dc.html" style="borderRadius:999px; padding:16px 30px; background:#ffffff; color:#0b2440; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; textDecoration:none" style-hover="background:#e7eff8">See all 13 capabilities</a>
+        <a href="Clients.dc.html" style="borderRadius:999px; padding:16px 30px; border:1.5px solid rgba(255,255,255,0.5); color:#ffffff; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; textDecoration:none" style-hover="background:rgba(255,255,255,0.12)">Our clients</a>
+      </div>
+    </section>
+
+    <dc-import name="Site Footer" hint-size="100%,320px"></dc-import>
+  </main>
+</div>
+</x-dc>
+</body>
+</html>
