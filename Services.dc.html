@@ -26,12 +26,16 @@
   <dc-import name="Site Header" active="Services" hint-size="100%,68px"></dc-import>
   <main style="flex:1; minWidth:0; width:100%; maxWidth:1360px; margin:0 auto; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
 
-    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
-      <div style="textAlign:center">
-        <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#0b4a8f; marginBottom:16px">SERVICES</div>
-        <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(28px,4vw,44px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 36px; color:#0b2440">What we supply</h1>
+    <section style="position:relative; overflow:hidden; borderRadius:28px; background:#0b2440; padding:clamp(48px,7vw,88px) clamp(24px,4vw,56px); textAlign:center">
+      <img src="hero.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; objectFit:cover; opacity:0.35" />
+      <div style="position:absolute; inset:0; backgroundImage:linear-gradient(180deg, rgba(11,36,64,0.7) 0%, rgba(11,36,64,0.92) 100%)"></div>
+      <div style="position:relative">
+        <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#8dc0f2; marginBottom:16px">SERVICES</div>
+        <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(28px,4vw,44px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0; color:#ffffff">What we supply</h1>
       </div>
+    </section>
 
+    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
       <div style="display:flex; flexDirection:column; gap:16px">
 
         <!-- Labour services (blue) -->
@@ -139,7 +143,7 @@
         <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 20px; color:#0b2440">From enquiry to crew on site</h2>
         <div style="width:56px; height:4px; borderRadius:2px; background:#f2994a; margin:0 auto 36px"></div>
       </div>
-      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(220px,1fr)); gap:16px">
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(220px,100%),1fr)); gap:16px">
         <div style="borderRadius:22px; background:#f4f6f8; padding:26px 24px">
           <div style="width:40px; height:40px; borderRadius:999px; background:#0b4a8f; display:grid; placeItems:center; fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:16px; color:#ffffff; marginBottom:16px">1</div>
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:17.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">Enquiry</h3>
@@ -196,7 +200,7 @@
         <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 20px; color:#0b2440">Common questions</h2>
         <div style="width:56px; height:4px; borderRadius:2px; background:#f2994a; margin:0 auto 36px"></div>
       </div>
-      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(280px,1fr)); gap:16px">
+      <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(280px,100%),1fr)); gap:16px">
         <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px">
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:16.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">How many workers can you mobilise?</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">Crew size is scaled to the job — from a handful of skilled hands for routine maintenance to larger gangs for planned shutdowns.</p>
@@ -222,7 +226,7 @@
     <img src="hero.png" alt="" style="position:absolute; top:0; right:0; height:100%; width:60%; objectFit:cover; opacity:0.55" />
     <div style="position:absolute; inset:0; backgroundImage:linear-gradient(90deg,#0b2440 0%,#0b2440 40%,rgba(11,36,64,0.55) 65%,rgba(11,36,64,0.15) 100%)"></div>
 
-    <div style="position:relative; maxWidth:1360px; margin:0 auto; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(320px,1fr)); gap:48px; alignItems:center">
+    <div style="position:relative; maxWidth:1360px; margin:0 auto; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(320px,100%),1fr)); gap:48px; alignItems:center">
       <div>
         <div style="width:32px; height:3px; borderRadius:2px; background:#f2994a; marginBottom:18px"></div>
         <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(30px,4.2vw,46px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 18px">Ready to mobilise a crew?</h2>
