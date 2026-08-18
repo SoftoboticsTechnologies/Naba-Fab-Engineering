@@ -24,18 +24,19 @@
 </helmet>
 <div style="display:flex; flexDirection:column; minHeight:100vh; background:#eef1f4">
   <dc-import name="Site Header" active="Services" hint-size="100%,68px"></dc-import>
-  <main style="flex:1; minWidth:0; width:100%; maxWidth:1360px; margin:0 auto; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
+  <main style="flex:1; minWidth:0; width:100%; display:flex; flexDirection:column">
 
-    <section style="position:relative; overflow:hidden; borderRadius:28px; background:#0b2440; padding:clamp(48px,7vw,88px) clamp(24px,4vw,56px); textAlign:center">
+    <section style="position:relative; overflow:hidden; background:#0b2440">
       <img src="hero.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; objectFit:cover; opacity:0.35" />
       <div style="position:absolute; inset:0; backgroundImage:linear-gradient(180deg, rgba(11,36,64,0.7) 0%, rgba(11,36,64,0.92) 100%)"></div>
-      <div style="position:relative">
+      <div style="position:relative; maxWidth:1360px; margin:0 auto; padding:clamp(48px,7vw,88px) clamp(20px,4vw,56px); textAlign:center">
         <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#8dc0f2; marginBottom:16px">SERVICES</div>
         <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(28px,4vw,44px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0; color:#ffffff">What we supply</h1>
       </div>
     </section>
 
-    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+    <section style="background:#ffffff">
+      <div style="maxWidth:1360px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,4vw,56px)">
       <div style="display:flex; flexDirection:column; gap:16px">
 
         <!-- Labour services (blue) -->
@@ -127,64 +128,72 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
       </div>
+      </div>
     </section>
 
-    <section style="borderRadius:22px; background:#0b2440; padding:22px clamp(20px,3vw,36px); display:flex; alignItems:center; justifyContent:center; flexWrap:wrap; gap:10px 28px; textAlign:center">
-      <span style="fontFamily:'Archivo',sans-serif; fontSize:15px; fontWeight:700; color:#ffffff">3 service lines</span>
-      <span style="color:#5b8fc7">·</span>
-      <span style="fontFamily:'Archivo',sans-serif; fontSize:15px; fontWeight:700; color:#ffffff">13 specialist trades</span>
-      <span style="color:#5b8fc7">·</span>
-      <span style="fontFamily:'Archivo',sans-serif; fontSize:15px; fontWeight:700; color:#ffffff">24-48 hr crew mobilisation</span>
+    <section style="background:#0b2440">
+      <div style="maxWidth:1360px; margin:0 auto; padding:22px clamp(20px,3vw,36px); display:flex; alignItems:center; justifyContent:center; flexWrap:wrap; gap:10px 28px; textAlign:center">
+        <span style="fontFamily:'Archivo',sans-serif; fontSize:15px; fontWeight:700; color:#ffffff">3 service lines</span>
+        <span style="color:#5b8fc7">·</span>
+        <span style="fontFamily:'Archivo',sans-serif; fontSize:15px; fontWeight:700; color:#ffffff">13 specialist trades</span>
+        <span style="color:#5b8fc7">·</span>
+        <span style="fontFamily:'Archivo',sans-serif; fontSize:15px; fontWeight:700; color:#ffffff">24-48 hr crew mobilisation</span>
+      </div>
     </section>
 
-    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+    <section style="background:#f6f8fb">
+      <div style="maxWidth:1360px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,4vw,56px)">
       <div style="textAlign:center">
         <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#0b4a8f; marginBottom:16px">HOW WE WORK</div>
         <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 20px; color:#0b2440">From enquiry to crew on site</h2>
         <div style="width:56px; height:4px; borderRadius:2px; background:#f2994a; margin:0 auto 36px"></div>
       </div>
       <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(220px,100%),1fr)); gap:16px">
-        <div style="borderRadius:22px; background:#f4f6f8; padding:26px 24px">
+        <div style="borderRadius:22px; background:#ffffff; padding:26px 24px">
           <div style="width:40px; height:40px; borderRadius:999px; background:#0b4a8f; display:grid; placeItems:center; fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:16px; color:#ffffff; marginBottom:16px">1</div>
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:17.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">Enquiry</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">You share the job, trade and timeline over call, WhatsApp or the contact form.</p>
         </div>
-        <div style="borderRadius:22px; background:#f4f6f8; padding:26px 24px">
+        <div style="borderRadius:22px; background:#ffffff; padding:26px 24px">
           <div style="width:40px; height:40px; borderRadius:999px; background:#0b4a8f; display:grid; placeItems:center; fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:16px; color:#ffffff; marginBottom:16px">2</div>
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:17.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">Site Assessment</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">We confirm scope, trades required and crew size against the site's schedule.</p>
         </div>
-        <div style="borderRadius:22px; background:#f4f6f8; padding:26px 24px">
+        <div style="borderRadius:22px; background:#ffffff; padding:26px 24px">
           <div style="width:40px; height:40px; borderRadius:999px; background:#0b4a8f; display:grid; placeItems:center; fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:16px; color:#ffffff; marginBottom:16px">3</div>
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:17.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">Crew Mobilisation</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">Skilled and unskilled hands are mobilised to site, ready for the agreed shift.</p>
         </div>
-        <div style="borderRadius:22px; background:#f4f6f8; padding:26px 24px">
+        <div style="borderRadius:22px; background:#ffffff; padding:26px 24px">
           <div style="width:40px; height:40px; borderRadius:999px; background:#0b4a8f; display:grid; placeItems:center; fontFamily:'Archivo',sans-serif; fontWeight:800; fontSize:16px; color:#ffffff; marginBottom:16px">4</div>
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:17.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">Supervision &amp; Billing</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">Work proceeds under direct supervision, with transparent, GST-compliant billing.</p>
         </div>
       </div>
-    </section>
-
-    <section style="borderRadius:22px; background:#eef4fb; padding:22px clamp(20px,3vw,36px); display:flex; alignItems:center; justifyContent:center; flexWrap:wrap; gap:14px 28px; textAlign:center">
-      <div style="display:flex; alignItems:center; gap:10px">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-        <span style="fontFamily:'Archivo',sans-serif; fontSize:14.5px; fontWeight:700; color:#0b2440">GST &amp; PAN registered business</span>
-      </div>
-      <span style="color:#aebccb">·</span>
-      <div style="display:flex; alignItems:center; gap:10px">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
-        <span style="fontFamily:'Archivo',sans-serif; fontSize:14.5px; fontWeight:700; color:#0b2440">Supervised, safety-first work</span>
-      </div>
-      <span style="color:#aebccb">·</span>
-      <div style="display:flex; alignItems:center; gap:10px">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.5 0 2.91.37 4.15 1.02"></path></svg>
-        <span style="fontFamily:'Archivo',sans-serif; fontSize:14.5px; fontWeight:700; color:#0b2440">Documented, transparent billing</span>
       </div>
     </section>
 
-    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+    <section style="background:#eef4fb">
+      <div style="maxWidth:1360px; margin:0 auto; padding:22px clamp(20px,3vw,36px); display:flex; alignItems:center; justifyContent:center; flexWrap:wrap; gap:14px 28px; textAlign:center">
+        <div style="display:flex; alignItems:center; gap:10px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <span style="fontFamily:'Archivo',sans-serif; fontSize:14.5px; fontWeight:700; color:#0b2440">GST &amp; PAN registered business</span>
+        </div>
+        <span style="color:#aebccb">·</span>
+        <div style="display:flex; alignItems:center; gap:10px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          <span style="fontFamily:'Archivo',sans-serif; fontSize:14.5px; fontWeight:700; color:#0b2440">Supervised, safety-first work</span>
+        </div>
+        <span style="color:#aebccb">·</span>
+        <div style="display:flex; alignItems:center; gap:10px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.5 0 2.91.37 4.15 1.02"></path></svg>
+          <span style="fontFamily:'Archivo',sans-serif; fontSize:14.5px; fontWeight:700; color:#0b2440">Documented, transparent billing</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#ffffff">
+      <div style="maxWidth:1360px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,4vw,56px)">
       <div style="textAlign:center; maxWidth:680px; margin:0 auto">
         <div style="width:56px; height:56px; borderRadius:999px; background:#eaf1fb; display:grid; placeItems:center; margin:0 auto">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b4a8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5H3v8h4c0 3-1 5-4 5v3z"></path><path d="M14 21c3 0 7-1 7-8V5h-7v8h4c0 3-1 5-4 5v3z"></path></svg>
@@ -192,57 +201,59 @@
         <p style="margin:20px 0 16px; fontFamily:'Archivo',sans-serif; fontStyle:italic; fontSize:clamp(18px,2.4vw,22px); lineHeight:1.6; fontWeight:600; color:#0b2440; textWrap:pretty">"[Client testimonial placeholder — to be replaced with a real quote about our services]"</p>
         <div style="fontFamily:'Archivo',sans-serif; fontSize:14px; fontWeight:700; color:#0b4a8f; letterSpacing:0.4px">— Industrial client, West Bengal</div>
       </div>
+      </div>
     </section>
 
-    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+    <section style="background:#f6f8fb">
+      <div style="maxWidth:1360px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,4vw,56px)">
       <div style="textAlign:center">
         <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#0b4a8f; marginBottom:16px">FAQ</div>
         <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 20px; color:#0b2440">Common questions</h2>
         <div style="width:56px; height:4px; borderRadius:2px; background:#f2994a; margin:0 auto 36px"></div>
       </div>
       <div style="display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(280px,100%),1fr)); gap:16px">
-        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px">
+        <div style="borderRadius:18px; background:#ffffff; padding:24px 26px">
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:16.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">How many workers can you mobilise?</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">Crew size is scaled to the job — from a handful of skilled hands for routine maintenance to larger gangs for planned shutdowns.</p>
         </div>
-        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px">
+        <div style="borderRadius:18px; background:#ffffff; padding:24px 26px">
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:16.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">Can you take on single-day jobs?</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">Yes. We supply crews for single-shift and single-day requirements as well as longer, multi-month shutdown contracts.</p>
         </div>
-        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px">
+        <div style="borderRadius:18px; background:#ffffff; padding:24px 26px">
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:16.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">What is your service area?</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">We primarily serve refineries, oil mills, solvent extraction and chemical plants across West Bengal, based out of Kapasdanga, Hooghly.</p>
         </div>
-        <div style="borderRadius:18px; background:#f4f6f8; padding:24px 26px">
+        <div style="borderRadius:18px; background:#ffffff; padding:24px 26px">
           <h3 style="fontFamily:'Archivo',sans-serif; fontSize:16.5px; fontWeight:700; margin:0 0 8px; color:#0b2440">Do your crews carry safety gear/PPE?</h3>
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">Yes. All crews are supplied with standard PPE and work under supervision following a safety-first approach on every site.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section style="position:relative; overflow:hidden; background:#0b2440; color:#ffffff">
+      <img src="hero.png" alt="" style="position:absolute; top:0; right:0; height:100%; width:60%; objectFit:cover; opacity:0.55" />
+      <div style="position:absolute; inset:0; backgroundImage:linear-gradient(90deg,#0b2440 0%,#0b2440 40%,rgba(11,36,64,0.55) 65%,rgba(11,36,64,0.15) 100%)"></div>
+
+      <div style="position:relative; maxWidth:1360px; margin:0 auto; padding:clamp(56px,8vw,110px) clamp(20px,4vw,56px); display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(320px,100%),1fr)); gap:48px; alignItems:center">
+        <div>
+          <div style="width:32px; height:3px; borderRadius:2px; background:#f2994a; marginBottom:18px"></div>
+          <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(30px,4.2vw,46px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 18px">Ready to mobilise a crew?</h2>
+          <div style="width:32px; height:3px; borderRadius:2px; background:#5b9bd8; marginBottom:18px"></div>
+          <p style="margin:0; fontSize:18px; lineHeight:1.75; color:#cfe0f2; maxWidth:520px">Labour services, machine operators and technical trades, mobilised on a shift, contract or shutdown basis.</p>
+        </div>
+        <div style="display:flex; gap:14px; flexWrap:wrap">
+          <a href="Specialist.dc.html" style="display:inline-flex; alignItems:center; gap:10px; borderRadius:999px; padding:18px 34px; background:#ffffff; color:#0b2440; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:#e7eff8">
+            See all capabilities
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0b2440" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="Contact.dc.html" style="borderRadius:999px; padding:18px 34px; border:1.5px solid rgba(255,255,255,0.5); color:#ffffff; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:rgba(255,255,255,0.12)">Get a quote</a>
         </div>
       </div>
     </section>
 
   </main>
-
-  <section style="position:relative; overflow:hidden; background:#0b2440; color:#ffffff; padding:clamp(56px,8vw,110px) clamp(20px,4vw,56px); width:100vw; marginLeft:calc(50% - 50vw); marginRight:calc(50% - 50vw)">
-    <img src="hero.png" alt="" style="position:absolute; top:0; right:0; height:100%; width:60%; objectFit:cover; opacity:0.55" />
-    <div style="position:absolute; inset:0; backgroundImage:linear-gradient(90deg,#0b2440 0%,#0b2440 40%,rgba(11,36,64,0.55) 65%,rgba(11,36,64,0.15) 100%)"></div>
-
-    <div style="position:relative; maxWidth:1360px; margin:0 auto; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(320px,100%),1fr)); gap:48px; alignItems:center">
-      <div>
-        <div style="width:32px; height:3px; borderRadius:2px; background:#f2994a; marginBottom:18px"></div>
-        <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(30px,4.2vw,46px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 18px">Ready to mobilise a crew?</h2>
-        <div style="width:32px; height:3px; borderRadius:2px; background:#5b9bd8; marginBottom:18px"></div>
-        <p style="margin:0; fontSize:18px; lineHeight:1.75; color:#cfe0f2; maxWidth:520px">Labour services, machine operators and technical trades, mobilised on a shift, contract or shutdown basis.</p>
-      </div>
-      <div style="display:flex; gap:14px; flexWrap:wrap">
-        <a href="Specialist.dc.html" style="display:inline-flex; alignItems:center; gap:10px; borderRadius:999px; padding:18px 34px; background:#ffffff; color:#0b2440; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:#e7eff8">
-          See all capabilities
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0b2440" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <a href="Contact.dc.html" style="borderRadius:999px; padding:18px 34px; border:1.5px solid rgba(255,255,255,0.5); color:#ffffff; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:rgba(255,255,255,0.12)">Get a quote</a>
-      </div>
-    </div>
-  </section>
-
   <dc-import name="Site Footer" hint-size="100%,320px"></dc-import>
 </div>
 </x-dc>

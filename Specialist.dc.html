@@ -18,17 +18,18 @@
 </helmet>
 <div style="display:flex; flexDirection:column; minHeight:100vh; background:#eef1f4">
   <dc-import name="Site Header" active="Specialist" hint-size="100%,68px"></dc-import>
-  <main style="flex:1; minWidth:0; width:100%; maxWidth:1360px; margin:0 auto; padding:20px clamp(12px,3vw,28px) 28px; display:flex; flexDirection:column; gap:20px">
-    <section style="position:relative; overflow:hidden; borderRadius:28px; background:#0b2440; padding:clamp(48px,7vw,88px) clamp(24px,4vw,56px); textAlign:center">
+  <main style="flex:1; minWidth:0; width:100%; display:flex; flexDirection:column">
+    <section style="position:relative; overflow:hidden; background:#0b2440; textAlign:center">
       <img src="hero.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; objectFit:cover; opacity:0.35" />
       <div style="position:absolute; inset:0; backgroundImage:linear-gradient(180deg, rgba(11,36,64,0.7) 0%, rgba(11,36,64,0.92) 100%)"></div>
-      <div style="position:relative">
+      <div style="position:relative; maxWidth:1360px; margin:0 auto; padding:clamp(48px,7vw,88px) clamp(20px,4vw,56px)">
         <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#8dc0f2; marginBottom:16px">SPECIALIST IN</div>
         <h1 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(28px,4vw,44px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0; color:#ffffff">Core technical capabilities</h1>
       </div>
     </section>
 
-    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+    <section style="background:#ffffff">
+      <div style="maxWidth:1360px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,4vw,56px)">
       <div style="textAlign:center">
         <p style="margin:0 auto 20px; maxWidth:620px; fontSize:17px; lineHeight:1.65; color:#5b6975">Process plant work is where we are strongest. Each of these is a job we staff, supervise and complete regularly.</p>
         <p style="margin:0 auto 36px; maxWidth:680px; fontSize:15.5px; lineHeight:1.7; color:#5b6975; textWrap:pretty">Built on 22+ years of hands-on experience inside refineries, solvent extraction plants, oil mills and chemical works, our crews are familiar with the pace, discipline and documentation that process plant sites expect.</p>
@@ -129,9 +130,11 @@
         </div>
 
       </div>
+      </div>
     </section>
 
-    <section style="borderRadius:28px; background:#ffffff; padding:clamp(24px,4vw,56px)">
+    <section style="background:#f6f8fb">
+      <div style="maxWidth:1360px; margin:0 auto; padding:clamp(40px,6vw,72px) clamp(20px,4vw,56px)">
       <div style="textAlign:center">
         <div style="fontFamily:'Archivo',sans-serif; fontSize:13px; fontWeight:800; letterSpacing:2px; color:#0b4a8f; marginBottom:16px">CAPABILITIES BY CATEGORY</div>
         <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(26px,3.4vw,36px); lineHeight:1.12; fontWeight:800; letterSpacing:-1px; margin:0 0 20px; color:#0b2440">Grouped by type of work</h2>
@@ -167,29 +170,30 @@
           <p style="margin:0; fontSize:14.5px; lineHeight:1.6; color:#4a5866">Wax and filter press operation, pouch machine operating, industrial automation and packaging operations.</p>
         </div>
       </div>
+      </div>
+    </section>
+
+    <section style="position:relative; overflow:hidden; background:#0b2440; color:#ffffff">
+      <img src="hero.png" alt="" style="position:absolute; top:0; right:0; height:100%; width:60%; objectFit:cover; opacity:0.55" />
+      <div style="position:absolute; inset:0; backgroundImage:linear-gradient(90deg,#0b2440 0%,#0b2440 40%,rgba(11,36,64,0.55) 65%,rgba(11,36,64,0.15) 100%)"></div>
+
+      <div style="position:relative; maxWidth:1360px; margin:0 auto; padding:clamp(56px,8vw,110px) clamp(20px,4vw,56px); display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(320px,100%),1fr)); gap:48px; alignItems:center">
+        <div>
+          <div style="width:32px; height:3px; borderRadius:2px; background:#f2994a; marginBottom:18px"></div>
+          <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(30px,4.2vw,46px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 18px">Specialist crews for every process plant job</h2>
+          <div style="width:32px; height:3px; borderRadius:2px; background:#5b9bd8; marginBottom:18px"></div>
+          <p style="margin:0; fontSize:18px; lineHeight:1.75; color:#cfe0f2; maxWidth:520px">From solvent extraction to fibre glass coating, our 13 core trades are staffed, supervised and completed regularly.</p>
+        </div>
+        <div style="display:flex; gap:14px; flexWrap:wrap">
+          <a href="Services.dc.html" style="display:inline-flex; alignItems:center; gap:10px; borderRadius:999px; padding:18px 34px; background:#ffffff; color:#0b2440; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:#e7eff8">
+            Our services
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0b2440" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="Contact.dc.html" style="borderRadius:999px; padding:18px 34px; border:1.5px solid rgba(255,255,255,0.5); color:#ffffff; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:rgba(255,255,255,0.12)">Contact us</a>
+        </div>
+      </div>
     </section>
   </main>
-
-  <section style="position:relative; overflow:hidden; background:#0b2440; color:#ffffff; padding:clamp(56px,8vw,110px) clamp(20px,4vw,56px); width:100vw; marginLeft:calc(50% - 50vw); marginRight:calc(50% - 50vw)">
-    <img src="hero.png" alt="" style="position:absolute; top:0; right:0; height:100%; width:60%; objectFit:cover; opacity:0.55" />
-    <div style="position:absolute; inset:0; backgroundImage:linear-gradient(90deg,#0b2440 0%,#0b2440 40%,rgba(11,36,64,0.55) 65%,rgba(11,36,64,0.15) 100%)"></div>
-
-    <div style="position:relative; maxWidth:1360px; margin:0 auto; display:grid; gridTemplateColumns:repeat(auto-fit,minmax(min(320px,100%),1fr)); gap:48px; alignItems:center">
-      <div>
-        <div style="width:32px; height:3px; borderRadius:2px; background:#f2994a; marginBottom:18px"></div>
-        <h2 style="fontFamily:'Archivo',sans-serif; fontSize:clamp(30px,4.2vw,46px); lineHeight:1.1; fontWeight:800; letterSpacing:-1.2px; margin:0 0 18px">Specialist crews for every process plant job</h2>
-        <div style="width:32px; height:3px; borderRadius:2px; background:#5b9bd8; marginBottom:18px"></div>
-        <p style="margin:0; fontSize:18px; lineHeight:1.75; color:#cfe0f2; maxWidth:520px">From solvent extraction to fibre glass coating, our 13 core trades are staffed, supervised and completed regularly.</p>
-      </div>
-      <div style="display:flex; gap:14px; flexWrap:wrap">
-        <a href="Services.dc.html" style="display:inline-flex; alignItems:center; gap:10px; borderRadius:999px; padding:18px 34px; background:#ffffff; color:#0b2440; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:#e7eff8">
-          Our services
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0b2440" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <a href="Contact.dc.html" style="borderRadius:999px; padding:18px 34px; border:1.5px solid rgba(255,255,255,0.5); color:#ffffff; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16.5px; textDecoration:none" style-hover="background:rgba(255,255,255,0.12)">Contact us</a>
-      </div>
-    </div>
-  </section>
 
   <dc-import name="Site Footer" hint-size="100%,320px"></dc-import>
 </div>
