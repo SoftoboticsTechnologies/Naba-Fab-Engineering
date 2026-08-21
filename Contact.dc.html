@@ -99,6 +99,9 @@
           </sc-if>
           <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
             <form onSubmit="{{ submit }}" style="display:flex; flexDirection:column; gap:18px">
+              <sc-if value="{{ error }}" hint-placeholder-val="{{ false }}">
+                <div style="borderRadius:12px; background:#fdecec; border:1px solid #f5b5b5; padding:12px 16px; fontSize:14.5px; color:#a12626">{{ error }}</div>
+              </sc-if>
               <div style="display:flex; flexDirection:column; gap:8px">
                 <label for="nf3-name" style="fontFamily:'Archivo',sans-serif; fontSize:12px; fontWeight:800; letterSpacing:1px; color:#0b4a8f">NAME <span style="color:#f2994a">*</span></label>
                 <input id="nf3-name" name="name" required="required" placeholder="Your name" style="width:100%; padding:14px 18px; borderRadius:999px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b" style-focus="borderColor:#0b4a8f; outline:none" />
@@ -117,9 +120,9 @@
                 <label for="nf3-job" style="fontFamily:'Archivo',sans-serif; fontSize:12px; fontWeight:800; letterSpacing:1px; color:#0b4a8f">REQUIREMENT <span style="color:#f2994a">*</span></label>
                 <textarea id="nf3-job" name="job" rows="5" required="required" placeholder="Type of work, location, manpower needed, timeline" style="width:100%; padding:16px 18px; borderRadius:20px; border:1px solid #cfd7de; fontSize:16px; fontFamily:'IBM Plex Sans',sans-serif; color:#16202b; resize:vertical"></textarea>
               </div>
-              <button type="submit" style="marginTop:6px; display:flex; alignItems:center; justifyContent:center; gap:10px; padding:16px 24px; borderRadius:999px; background:#0b2440; color:#ffffff; border:none; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; cursor:pointer" style-hover="background:#093a70">
+              <button type="submit" disabled="{{ sending }}" style="marginTop:6px; display:flex; alignItems:center; justifyContent:center; gap:10px; padding:16px 24px; borderRadius:999px; background:#0b2440; color:#ffffff; border:none; fontFamily:'Archivo',sans-serif; fontWeight:700; fontSize:16px; cursor:pointer" style-hover="background:#093a70">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                Send enquiry
+                {{ submitLabel }}
               </button>
             </form>
           </sc-if>
@@ -186,13 +189,40 @@
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
+const CONTACT_API_URL = "https://k5iewetbri.execute-api.ap-south-1.amazonaws.com/prod/contact";
+
 class Component extends DCLogic {
-  state = { sent: false };
+  state = { sent: false, sending: false, error: "" };
   renderVals() {
     return {
       sent: this.state.sent,
       notSent: !this.state.sent,
-      submit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
+      sending: this.state.sending,
+      error: this.state.error,
+      submitLabel: this.state.sending ? "Sending..." : "Send enquiry",
+      submit: async (e) => {
+        e.preventDefault();
+        if (this.state.sending) return;
+        const form = e.target;
+        const payload = {
+          name: form.name.value,
+          company: form.company.value,
+          phone: form.phone.value,
+          job: form.job.value
+        };
+        this.setState({ sending: true, error: "" });
+        try {
+          const res = await fetch(CONTACT_API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+          if (!res.ok) throw new Error("Request failed");
+          this.setState({ sent: true, sending: false });
+        } catch (err) {
+          this.setState({ sending: false, error: "Something went wrong sending your enquiry. Please call or WhatsApp us instead." });
+        }
+      }
     };
   }
 }
